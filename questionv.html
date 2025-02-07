@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine's Surprise</title>
+  <!-- Google Font for a romantic, handwritten vibe -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <!-- Link to CSS (or paste into CodePen CSS panel) -->
+  <link rel="stylesheet" href="questionv.css">
+</head>
+<body>
+  <!-- Main background music (loops) -->
+  <audio id="bgMusic" loop>
+    <source src="your-background-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <!-- Yes and No one-shot sounds -->
+  <audio id="yesSound">
+    <source src="https://meow-370.github.io/valentinekajal/happy-happy-happy-cat.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="noSound">
+    <source src="https://meow-370.github.io/valentinekajal/cry-banana-cat.mp3" type="audio/mpeg">
+  </audio>
+  
+  <!-- Candles container (pure CSS candles) -->
+  <div class="candles">
+    <div class="candle"></div>
+    <div class="candle"></div>
+    <div class="candle"></div>
+  </div>
+  
+  <!-- Floating hearts container -->
+  <div id="hearts-container"></div>
+  
+  <!-- Main Content Container -->
+  <div class="container">
+    <!-- Pet container with side images -->
+    <div id="pet-container">
+      <img id="sideLeft" class="side-pet" src="" alt="Side Pet Left">
+      <img id="pet" src="https://media.tenor.com/2csFlkJ3TyAAAAAj/tkthao219-bubududu.gif" alt="Shy Pet" class="pet">
+      <img id="sideRight" class="side-pet" src="" alt="Side Pet Right">
+    </div>
+    
+    <!-- Main Question -->
+    <h1 id="mainQuestion">Can I be your Valentine?</h1>
+    
+    <!-- Buttons Container -->
+    <div class="buttons">
+      <!-- Yes button built as a pure CSS heart -->
+      <button id="yesBtn" class="heart-btn"><span>Yes</span></button>
+      <!-- No button (will run on click until Yes is pressed) -->
+      <button id="noBtn" class="run-btn">No</button>
+    </div>
+    
+    <!-- Container for Yes rolling messages -->
+    <div id="rollMessages" class="roll-messages"></div>
+    
+    <!-- Container for No feedback messages (positioned next to pet) -->
+    <div id="noFeedback" class="no-feedback"></div>
+    
+    <!-- A tiny note -->
+    <p id="tinyNote">No matter what you choose, you're still my everything ❤️</p>
+  </div>
+  
+  <!-- Link to JavaScript (or paste into CodePen JS panel) -->
+  <script src="questionv.js"></script>
+</body>
+</html>
